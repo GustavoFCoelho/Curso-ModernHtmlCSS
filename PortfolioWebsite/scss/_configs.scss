@@ -1,5 +1,13 @@
 $website-width: 1280px;
 $main-color: #ffbc00;
 $light-color: #f4f4f4;
-$medium-color: #333;
-$bg-image: url("https://images.unsplash.com/photo-1578241561880-0a1d5db3cb8a?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60")
+$medium-color: #666;
+$bg-image: url("https://images.unsplash.com/photo-1578241561880-0a1d5db3cb8a?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60");
+
+@function set-text-color($color){
+    @if(lightness($color) > 50){
+        @return #000;
+    } @else{
+        @return #fff
+    }
+}

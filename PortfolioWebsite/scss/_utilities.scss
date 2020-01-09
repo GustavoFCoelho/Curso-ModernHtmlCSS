@@ -24,7 +24,7 @@
         color: #333;
         background: $light-color;
     }
-    &-main{
+    &-medium{
         @extend %btn-shared;
         color: #f4f4f4;
         background: $medium-color;
@@ -73,5 +73,53 @@ a[class^='btn-']:hover{
     }
     &-4{
         margin: 4rem 0;
+    }
+}
+
+.section-title{
+    font-size: 2rem;
+    display: block;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    font-weight: 100;
+
+}
+
+.bottom-line{
+    height: 2px;
+    width: 3rem;
+    background: $main-color;
+    display: block;
+    margin: 0 auto 1rem auto
+}
+
+.bg{
+    &-main{
+        background: $main-color;
+        color: set-text-color($main-color);
+    }
+    &-dark{
+        background: $medium-color;
+        color: set-text-color($medium-color);
+    }
+    &-light{
+        background: $light-color;
+        color: set-text-color($light-color);
+    }
+}
+
+.progress{
+    overflow: hidden;
+    height: 20px;
+    background: $light-color;
+    border-radius: 5px;
+    margin-bottom: 0.6rem;
+
+    div{
+        height: 100%;
+        color: #fff;
+        text-align: center;
+        background: $main-color;
+
     }
 }
